@@ -1,0 +1,99 @@
+\input{preambulo.tex}
+\usepackage{url}
+\usepackage[linktocpage]{hyperref}
+\usepackage{xcolor}
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily,
+	showstringspaces=false,
+	commentstyle=\color{blue},
+	keywordstyle=\color{red}
+}
+%----------------------------------------------------------------------------------------
+%	TÍTULO Y DATOS DEL ALUMNO
+%----------------------------------------------------------------------------------------
+
+\title{	
+\normalfont \normalsize 
+\textsc{{\bf Asignatura (2014-2015) Grupo A} \\ Grado en Ingeniería Informática \\ Universidad de Granada} \\ [25pt] % Your university, school and/or department name(s)
+\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge Título (Nombre y número) \\ % The assignment title
+\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+\author{José Manuel Luque Burgos - 15452527T} % Nombre y apellidos
+
+\date{\normalsize\today} % Incluye la fecha actual
+
+
+
+
+%----------------------------------------------------------------------------------------
+% DOCUMENTO
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Muestra el Título
+
+\begin{figure}[H] %con el [H] le obligamos a situar aquí la figura
+	\centering
+	\includegraphics[scale=0.8]{ugr.jpg}  %el parámetro scale permite agrandar o achicar la imagen. En el nombre de archivo puede especificar directorios
+	\label{ugr}
+
+\end{figure}
+
+\newpage %inserta un salto de página %clearpage
+
+
+\tableofcontents % para generar el índice de contenidos
+
+\listoffigures
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	SECCIONES
+%----------------------------------------------------------------------------------------
+
+\section{Seccion}
+\subsection{Subseccion}
+Parrafo
+\newline
+Cita
+\cite{cita1b}
+\newline
+lista:
+\begin{itemize}
+	\item elemento
+	\item sublista enumerada
+
+	\begin{enumerate}
+		\item elemento
+		\item elemento
+	\end{enumerate}
+\end{itemize}
+
+asdf
+\newline
+
+\begin{figure}[H] %con el [H] le obligamos a situar aquí la figura
+	\centering
+	\includegraphics[scale=1]{a.JPG} 
+	\caption{Configuración J2, J3, J4 y J5}
+	\label{fig:a}
+	
+\end{figure}
+
+Referencia a figura \ref{fig:a} 
+%------------------------------------------------
+
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAFÍA
+%----------------------------------------------------------------------------------------
+\bibliographystyle{plain} % hay varias formas de citar
+
+\bibliography{citas} %archivo citas.bib que contiene las entradas 
+
+\end{document}
