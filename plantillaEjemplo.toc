@@ -1,3 +1,0 @@
-\select@language {spanish}
-\contentsline {section}{\numberline {1}Seccion}{3}{section.1}
-\contentsline {subsection}{\numberline {1.1}Subseccion}{3}{subsection.1.1}
